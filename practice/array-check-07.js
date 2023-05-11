@@ -41,5 +41,3 @@ function isAlice(student) {
   if (student.gender === 'female' && student.name.toLowerCase() === 'alice') return true;
   return false;
 }
-
-console.log([] !== []);

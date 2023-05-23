@@ -1,5 +1,4 @@
-import { toClassifyStudentV3 } from '../src/05-09-classify-student';
-
+import toClassifyStudentV3 from '../src/05-09-classify-student.js';
 describe('Test function toClassifyStudentV3()', () => {
   test('should return Invalid mark when mark<0', () => {
     expect(toClassifyStudentV3(-1)).toBe('Invalid mark');

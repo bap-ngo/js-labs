@@ -43,7 +43,7 @@ function toClassifyStudentV2(mark) {
 // console.log(toClassifyStudent('a'));
 
 //v3
-export function toClassifyStudentV3(mark) {
+function toClassifyStudentV3(mark) {
   if (mark < 0 || mark > 10) return 'Invalid mark';
   if (mark > 8) return 'Excellence';
   if (mark >= 7) return 'Good';
@@ -58,3 +58,4 @@ export function toClassifyStudentV3(mark) {
 // console.log(toClassifyStudent(6));
 // console.log(toClassifyStudent(3));
 // console.log(toClassifyStudent('a'));
+export default toClassifyStudentV3;

@@ -1,4 +1,5 @@
-import toClassifyStudentV3 from '../src/05-09-classify-student.js';
+import toClassifyStudentV3 from '../src/05-09-classify-student';
+
 describe('Test function toClassifyStudentV3()', () => {
   test('should return Invalid mark when mark<0', () => {
     expect(toClassifyStudentV3(-1)).toBe('Invalid mark');
@@ -19,7 +20,9 @@ describe('Test function toClassifyStudentV3()', () => {
   });
 
   test('should return Not Good when mark in [4,6]', () => {
-    [4, 5, 6].forEach((mark) => expect(toClassifyStudentV3(mark)).toBe('Not Good'));
+    [4, 5, 6].forEach((mark) =>
+      expect(toClassifyStudentV3(mark)).toBe('Not Good')
+    );
   });
 
   test('should return Bad when mark in [1,3]', () => {

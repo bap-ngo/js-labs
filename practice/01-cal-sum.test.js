@@ -11,18 +11,18 @@ describe('calculateS1', () => {
   });
 
   it('should return sum of 1 to n when n>0', () => {
-    expect(calculateS1(1)).toBe(1);
-    expect(calculateS1(3)).toBe(6);
-    expect(calculateS1(4)).toBe(10);
-    expect(calculateS1(10)).toBe(55);
-    expect(calculateS1(11)).toBe(66);
+    expect(calculateS2(1)).toBe(1);
+    expect(calculateS2(3)).toBe(6);
+    expect(calculateS2(4)).toBe(10);
+    expect(calculateS2(10)).toBe(55);
+    expect(calculateS2(11)).toBe(66);
   });
 });
 
 describe('calculateS2', () => {
   it('should return 0 if n<=0', () => {
     expect(calculateS2(-1)).toBe(0);
-    expect(calculateS2(0)).toBe(0);
+    expect(calculateS1(0)).toBe(0);
   });
 
   it('should return sum of 1 to n when n>0', () => {

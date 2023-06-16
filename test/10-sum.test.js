@@ -1,5 +1,4 @@
-import { sum } from '../src/10-sum.js';
-
+import { sum } from '../src/10-sum';
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
 });

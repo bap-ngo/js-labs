@@ -21,10 +21,7 @@ function validMountainArray(numberList) {
   return i === numberList.length - 1;
 }
 
-console.log(validMountainArray([0, 4, 3, 2]));
-
 export function validMountainArray(numberList) {
-  // your code here
   // your code here
   if (!Array.isArray(numberList) || numberList.length < 3) return false;
   let peak = 0;
